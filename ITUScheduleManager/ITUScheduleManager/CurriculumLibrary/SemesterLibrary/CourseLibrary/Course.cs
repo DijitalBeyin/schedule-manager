@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ITUScheduleManager.Course
+namespace ITUScheduleManager.CurriculumLibrary.SemesterLibrary.CourseLibrary
 {
     public enum Grading
     {
@@ -43,7 +43,7 @@ namespace ITUScheduleManager.Course
 
         public Course()
         {
-            CourseManager.Add(this);
+            CourseManager.AllCourses.Add(this);
         }
 
         public double GetGradeValue()

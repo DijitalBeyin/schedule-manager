@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ITUScheduleManager.Course;
+using ITUScheduleManager.Curriculum.Semester.Course;
 
 namespace ITUScheduleManager.ServerOperations
 {

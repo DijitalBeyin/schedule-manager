@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ITUScheduleManager.Course;
+using ITUScheduleManager.CurriculumLibrary.SemesterLibrary.CourseLibrary;
 
-namespace ITUScheduleManager.Semester
+namespace ITUScheduleManager.CurriculumLibrary.SemesterLibrary
 {
     class Semester
     {
@@ -18,7 +18,7 @@ namespace ITUScheduleManager.Semester
 
         }
 
-        public GetWeightedMean()
+        public double GetWeightedMean()
         {
             double TotalMean = 0;
             double TotalCredits = 0;
