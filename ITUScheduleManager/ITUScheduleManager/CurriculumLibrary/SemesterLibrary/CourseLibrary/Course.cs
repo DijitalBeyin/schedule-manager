@@ -19,6 +19,14 @@ namespace ITUScheduleManager.CurriculumLibrary.SemesterLibrary.CourseLibrary
         FF = 0
     }
 
+    public enum CourseStatus
+    {
+        NotTaken,
+        Taken,
+        Failed,
+        Exempt
+    }
+
     class Course
     {
         public string Crn { get; set; } // 13264
@@ -30,6 +38,7 @@ namespace ITUScheduleManager.CurriculumLibrary.SemesterLibrary.CourseLibrary
         public string Room { get; set; }
         public int Capacity { get; set; }
         public int Enrolled { get; set; }
+        public CourseStatus Status { get; set; }
 
         // TODO: Construct Departments as class -> Departments
         public string[] Departments { get; set; }
