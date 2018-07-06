@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ITUScheduleManager.Curriculum.Semester.Course;
+using ITUScheduleManager.CurriculumLibrary.SemesterLibrary.CourseLibrary;
 
 namespace ITUScheduleManager.ServerOperations
 {
@@ -20,7 +20,7 @@ namespace ITUScheduleManager.ServerOperations
         {
             string SearchUrl = this.Link + Branch;
             // TODO: -
-            return new Course;
+            return new Course();
         }
 
     }
