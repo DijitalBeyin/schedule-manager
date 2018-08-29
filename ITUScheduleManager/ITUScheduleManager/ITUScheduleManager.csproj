@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CourseLibrary\Course.cs" />
     <Compile Include="CurriculumLibrary\Curriculum.cs" />
     <Compile Include="CurriculumLibrary\SemesterLibrary\CourseLibrary\Course.cs" />
     <Compile Include="CurriculumLibrary\SemesterLibrary\CourseLibrary\CourseManager.cs" />
