@@ -3,7 +3,7 @@
     [
         {
             "name": "Power Electronic Circuits",
-            "code": "ELK 331E",
+            "code": "ELK 313",
             "credits": 3.0,
             "grade-letter": "BB",
             "grade": 3.0,
@@ -88,21 +88,24 @@
             ],
             "plan":
             [
-                "Geribeslemeli kontrol sistemlerine giriş",
-                "Sistemlerin geçici ve sürekli hal cevapları",
-                "Zaman tanım bölgesi kriterleri",
-                "Kararlılık analizi ve Routh Hurwitz kararlılık kriteri",
-                "Köklerin geometrik yer eğrisi tekniği",
-                "Köklerin geometrik yer eğrisi tekniği",
-                "Frekans tanım bölgesi kriterleri",
-                "Nyquist diyagramı",
-                "Nyquist diyagramı",
-                "Nyquist kararlılık kriteri",
-                "Bode diyagramları",
-                "Bode diyagramları",
-                "Kapalı çevrim frekans cevapları",
-                "Durum uzayı gösterilimleri"
+                "Geribeslemeli kontrol sistemlerine giris",
+                "Sistemlerin gecici ve surekli hal cevaplari",
+                "Zaman tanim bolgesi kriterleri",
+                "Kararlilik analizi ve Routh Hurwitz kararlilik kriteri",
+                "Koklerin geometrik yer egrisi teknigi",
+                "Koklerin geometrik yer egrisi teknigi",
+                "Frekans tanim bolgesi kriterleri",
+                "Nyquist diyagrami",
+                "Nyquist diyagrami",
+                "Nyquist kararlilik kriteri",
+                "Bode diyagramlari",
+                "Bode diyagramlari",
+                "Kapali cevrim frekans cevaplari",
+                "Durum uzayi gosterilimleri"
             ]
         }
     ]
 }
+
+
+
