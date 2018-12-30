@@ -6,34 +6,38 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>751</width>
-    <height>553</height>
+    <width>585</width>
+    <height>411</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>GUI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Pictures/ros-kinetic.jpg</normaloff>../../../Pictures/ros-kinetic.jpg</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="submitButton">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>470</y>
+      <x>480</x>
+      <y>350</y>
       <width>99</width>
       <height>27</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Calculate</string>
     </property>
    </widget>
    <widget class="QWidget" name="horizontalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>20</y>
-      <width>521</width>
-      <height>80</height>
+      <x>10</x>
+      <y>10</y>
+      <width>567</width>
+      <height>29</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_7">
@@ -53,6 +57,19 @@
      </item>
      <item>
       <widget class="QLineEdit" name="lineEdit_total_credits"/>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item>
       <widget class="QLabel" name="label_current_gpa">
@@ -76,10 +93,10 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>160</y>
-      <width>431</width>
-      <height>301</height>
+      <x>160</x>
+      <y>70</y>
+      <width>268</width>
+      <height>260</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
@@ -97,8 +114,126 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
-      <widget class="QLineEdit" name="lineEdit_6"/>
+     <item row="4" column="4">
+      <widget class="QComboBox" name="grade_5">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FF</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_grade_3">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Grade :</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QComboBox" name="grade_4">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FF</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="credit_2"/>
      </item>
      <item row="2" column="0">
       <widget class="QLabel" name="label_credit_3">
@@ -114,14 +249,129 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="QLineEdit" name="lineEdit_4"/>
+     <item row="7" column="4">
+      <widget class="QComboBox" name="grade_8">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FF</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QSpinBox" name="credit_6"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_grade_2">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Grade :</string>
+       </property>
+      </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit_1"/>
+      <widget class="QSpinBox" name="credit_1"/>
      </item>
-     <item row="4" column="1">
-      <widget class="QLineEdit" name="lineEdit_5"/>
+     <item row="6" column="4">
+      <widget class="QComboBox" name="grade_7">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FF</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item row="7" column="0">
       <widget class="QLabel" name="label_credit_8">
@@ -137,17 +387,168 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit_3"/>
+     <item row="2" column="4">
+      <widget class="QComboBox" name="grade_3">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FF</string>
+        </property>
+       </item>
+      </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_2"/>
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_grade_5">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Grade :</string>
+       </property>
+      </widget>
      </item>
-     <item row="7" column="1">
-      <widget class="QLineEdit" name="lineEdit_8"/>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_grade_01">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Grade :</string>
+       </property>
+      </widget>
      </item>
-     <item row="6" column="1">
-      <widget class="QLineEdit" name="lineEdit_7"/>
+     <item row="3" column="3">
+      <widget class="QLabel" name="label_grade_4">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Grade :</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLabel" name="label_grade_8">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Grade :</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QComboBox" name="grade_1">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FF</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="credit_4"/>
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_credit_5">
@@ -205,6 +606,58 @@
        </property>
       </widget>
      </item>
+     <item row="1" column="4">
+      <widget class="QComboBox" name="grade_2">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FF</string>
+        </property>
+       </item>
+      </widget>
+     </item>
      <item row="5" column="0">
       <widget class="QLabel" name="label_credit_6">
        <property name="font">
@@ -219,77 +672,13 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label_grade_01">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Grade :</string>
-       </property>
-      </widget>
+     <item row="7" column="1">
+      <widget class="QSpinBox" name="credit_8"/>
      </item>
-     <item row="1" column="2">
-      <widget class="QLabel" name="label_grade_2">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Grade :</string>
-       </property>
-      </widget>
+     <item row="6" column="1">
+      <widget class="QSpinBox" name="credit_7"/>
      </item>
-     <item row="2" column="2">
-      <widget class="QLabel" name="label_grade_3">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Grade :</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="2">
-      <widget class="QLabel" name="label_grade_4">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Grade :</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="2">
-      <widget class="QLabel" name="label_grade_5">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Grade :</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="2">
+     <item row="5" column="3">
       <widget class="QLabel" name="label_grade_6">
        <property name="font">
         <font>
@@ -303,7 +692,65 @@
        </property>
       </widget>
      </item>
-     <item row="6" column="2">
+     <item row="4" column="1">
+      <widget class="QSpinBox" name="credit_5"/>
+     </item>
+     <item row="5" column="4">
+      <widget class="QComboBox" name="grade_6">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>DD</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FF</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="credit_3"/>
+     </item>
+     <item row="6" column="3">
       <widget class="QLabel" name="label_grade_7">
        <property name="font">
         <font>
@@ -317,19 +764,109 @@
        </property>
       </widget>
      </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="2">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="2">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="4" column="2">
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="2">
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="6" column="2">
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
      <item row="7" column="2">
-      <widget class="QLabel" name="label_grade_8">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
-       <property name="text">
-        <string>Grade :</string>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
        </property>
-      </widget>
+      </spacer>
      </item>
     </layout>
    </widget>
@@ -339,13 +876,34 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>751</width>
+     <width>585</width>
      <height>25</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_total_credits</tabstop>
+  <tabstop>lineEdit_current_gpa</tabstop>
+  <tabstop>credit_1</tabstop>
+  <tabstop>grade_1</tabstop>
+  <tabstop>credit_2</tabstop>
+  <tabstop>grade_2</tabstop>
+  <tabstop>credit_3</tabstop>
+  <tabstop>grade_3</tabstop>
+  <tabstop>credit_4</tabstop>
+  <tabstop>grade_4</tabstop>
+  <tabstop>credit_5</tabstop>
+  <tabstop>grade_5</tabstop>
+  <tabstop>credit_6</tabstop>
+  <tabstop>grade_6</tabstop>
+  <tabstop>credit_7</tabstop>
+  <tabstop>grade_7</tabstop>
+  <tabstop>credit_8</tabstop>
+  <tabstop>grade_8</tabstop>
+  <tabstop>submitButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
