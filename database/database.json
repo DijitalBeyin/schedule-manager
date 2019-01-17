@@ -1,114 +1,84 @@
 {
-    "courses":
-    {
-        "ELK 313":
-        {
-            "id": "ELK313_AXF9",
-            "crn": "13359",
-            "name": "Power Electronic Circuits",
-            "code": "ELK 313",
-            "credits": 3.0,
-            "grade-letter": "BB",
-            "grade": 3.0,
-            "date-range":
-            {
-                "begin-date": "15 Sep 2018",
-                "end-date": "21 Jen 2019"
-            },
-            "date":
-            [
-                {
-                    "day": "Monday",
-                    "begin-time": "9:30:00",
-                    "end-time": "12:30:00",
-                    "duration": 3.0
-                },
-                {
-                    "day": "Thursday",
-                    "begin-time": "13:30:00",
-                    "end-time": "16:30:00",
-                    "duration": 3.0
-                }
-            ],
-            "plan":
-            [
-                "The answer of What is Power Electronics? question and application areas of power electronics,
-                classification of power converters. Ideal switch and rectifier. Semiconductor power switching devices used
-                in power electronic circuits: Diode, bipolar junction transistor (BJT), silicon controlled rectifier (thyristor),
-                triac, diac, Gate turn-off thyristor (GTO), mosfet, insulated gate bipolar transistor (IGBT), mos controlled
-                thyristor (MCT), integrated gate commutated thyristor (IGCT). I-V characteristics, operation principles,
-                maximum voltage and current ratings.",
-                "Power Semiconductor switches continued. Gating circuits for controlled semiconductor switches. Series
-                and parallel commutation circuits for turning-off of thyristors.",
-                "AC-DC: Alternating Current - Direct Current converters (rectifiers). Single phase half-wave uncontrolled
-                and controlled rectifiers. Operating principles (voltage and current waveshapes, analytic solutions, power
-                factor, etc.) for resistive, resistive-inductive and resistive-inductive-constant voltage load conditions.",
-                "Single phase full-wave uncontrolled, half-controlled and controlled rectifiers. Operating principles
-                (voltage and current waveshapes, analytic solutions, power factor, etc.) for different load conditions.",
-                "Rectifiers continued.",
-                "Three-phase half-wave uncontrolled and controlled rectifiers, three-phase full-wave uncontrolled, half-
-                controlled and controlled rectifiers, 12-pulse rectifiers, power factor.",
-                "Three-phase rectifiers continued.",
-                "AC-AC: Alternating Current - Alternating Current Converters (AC choppers). International standards that
-                limits the maximum values of harmonics injected to the utility at the point of common coupling: IEEE
-                519-1992, IEC 555-2. Single- and three-phase AC choppers, phase control and burst-firing control
-                methods, resistive and resistive-inductive load conditions. Comparison of phase control and burst-firing
-                control methods in terms of generated harmonics and application areas. Direct frequency converters:
-                Cycloconverters.",
-                "AC choppers continued.",
-                "DC-DC: Direct Current - Direct Current Converters (DC choppers). Buck type class A and boost type
-                class B choppers operating in first quadrant. Two-quadrant operation: Class C operating in 1st and 2nd
-                quadrant, Class D operating in 1st and 4th quadrant. Four-quadrant operation: Class E choppers",
-                "DC choppers continued.",
-                "DC-AC: Direct Current - Alternating Current Converters (inverters). Full-wave converters, single-phase
-                square-wave inverters, amplitude and harmonic control at the inverter output, three-phase six-step square-
-                wave inverter, harmonics in square-wave inverters. Description of Pulse Width Modulation (PWM) and its
-                principles, voltage-controlled PWM inverters, harmonics in PWM inverters. Different modulation
-                techniques for voltage-controlled PWM inverters, current-controlled voltage-source PWM inverters.",
-                "Inverters continued.",
-                "Inverters continued."
-            ],
-        },
-        "KON 313":
-        {
-            "id": "KON313_CYX8",
-            "crn": "13360",
-            "name": "Feedback Control Systems",
-            "code": "KON 313",
-            "credits": 3.0,
-            "grade-letter": "BA",
-            "grade": 3.5,
-            "date-range":
-            {
-                "begin-date": "15 Sep 2018",
-                "end-date": "21 Jen 2019"
-            },
-            "date":
-            [
-                {
-                    "day": "Monday",
-                    "begin-time": "13:30:00",
-                    "end-time": "16:30:00",
-                    "duration": 3.0
-                }
-            ],
-            "plan":
-            [
-                "Geribeslemeli kontrol sistemlerine giris",
-                "Sistemlerin gecici ve surekli hal cevaplari",
-                "Zaman tanim bolgesi kriterleri",
-                "Kararlilik analizi ve Routh Hurwitz kararlilik kriteri",
-                "Koklerin geometrik yer egrisi teknigi",
-                "Koklerin geometrik yer egrisi teknigi",
-                "Frekans tanim bolgesi kriterleri",
-                "Nyquist diyagrami",
-                "Nyquist diyagrami",
-                "Nyquist kararlilik kriteri",
-                "Bode diyagramlari",
-                "Bode diyagramlari",
-                "Kapali cevrim frekans cevaplari",
+    "courses": {
+        "KON 313": {
+            "code": "KON 313", 
+            "name": "Feedback Control Systems", 
+            "grade": 3.5, 
+            "grade-letter": "BA", 
+            "id": "KON313_13360", 
+            "credits": 3.0, 
+            "plan": [
+                "Geribeslemeli kontrol sistemlerine giris", 
+                "Sistemlerin gecici ve surekli hal cevaplari", 
+                "Zaman tanim bolgesi kriterleri", 
+                "Kararlilik analizi ve Routh Hurwitz kararlilik kriteri", 
+                "Koklerin geometrik yer egrisi teknigi", 
+                "Koklerin geometrik yer egrisi teknigi", 
+                "Frekans tanim bolgesi kriterleri", 
+                "Nyquist diyagrami", 
+                "Nyquist diyagrami", 
+                "Nyquist kararlilik kriteri", 
+                "Bode diyagramlari", 
+                "Bode diyagramlari", 
+                "Kapali cevrim frekans cevaplari", 
                 "Durum uzayi gosterilimleri"
-            ]
+            ], 
+            "date": [
+                {
+                    "duration": 3.0, 
+                    "begin-time": "13:30:00", 
+                    "end-time": "16:30:00", 
+                    "day": "Monday"
+                }
+            ], 
+            "crn": "13360", 
+            "date-range": {
+                "end-date": "21 Jen 2019", 
+                "begin-date": "15 Sep 2018"
+            }
+        }, 
+        "ELK 313": {
+            "code": "ELK 313", 
+            "name": "Power Electronic Circuits", 
+            "grade": 3.0, 
+            "grade-letter": "BB", 
+            "id": "ELK313_13359", 
+            "credits": 3.0, 
+            "plan": [
+                "The answer of What is Power Electronics? question and application areas of power electronics, classification of power converters. Ideal switch and rectifier. Semiconductor power switching devices used in power electronic circuits: Diode, bipolar junction transistor (BJT), silicon controlled rectifier (thyristor), triac, diac, Gate turn-off thyristor (GTO), mosfet, insulated gate bipolar transistor (IGBT), mos controlled thyristor (MCT), integrated gate commutated thyristor (IGCT). I-V characteristics, operation principles, maximum voltage and current ratings.", 
+                "Power Semiconductor switches continued. Gating circuits for controlled semiconductor switches. Series and parallel commutation circuits for turning-off of thyristors.", 
+                "AC-DC: Alternating Current - Direct Current converters (rectifiers). Single phase half-wave uncontrolled and controlled rectifiers. Operating principles (voltage and current waveshapes, analytic solutions, power factor, etc.) for resistive, resistive-inductive and resistive-inductive-constant voltage load conditions.", 
+                "Single phase full-wave uncontrolled, half-controlled and controlled rectifiers. Operating principles (voltage and current waveshapes, analytic solutions, power factor, etc.) for different load conditions.", 
+                "Rectifiers continued.", 
+                "Three-phase half-wave uncontrolled and controlled rectifiers, three-phase full-wave uncontrolled, half- controlled and controlled rectifiers, 12-pulse rectifiers, power factor.", 
+                "Three-phase rectifiers continued.", 
+                "AC-AC: Alternating Current - Alternating Current Converters (AC choppers). International standards that limits the maximum values of harmonics injected to the utility at the point of common coupling: IEEE 519-1992, IEC 555-2. Single- and three-phase AC choppers, phase control and burst-firing control methods, resistive and resistive-inductive load conditions. Comparison of phase control and burst-firing control methods in terms of generated harmonics and application areas. Direct frequency converters: Cycloconverters.", 
+                "AC choppers continued.", 
+                "DC-DC: Direct Current - Direct Current Converters (DC choppers). Buck type class A and boost type class B choppers operating in first quadrant. Two-quadrant operation: Class C operating in 1st and 2nd quadrant, Class D operating in 1st and 4th quadrant. Four-quadrant operation: Class E choppers", 
+                "DC choppers continued.", 
+                "DC-AC: Direct Current - Alternating Current Converters (inverters). Full-wave converters, single-phase square-wave inverters, amplitude and harmonic control at the inverter output, three-phase six-step square- wave inverter, harmonics in square-wave inverters. Description of Pulse Width Modulation (PWM) and its principles, voltage-controlled PWM inverters, harmonics in PWM inverters. Different modulation techniques for voltage-controlled PWM inverters, current-controlled voltage-source PWM inverters.", 
+                "Inverters continued.", 
+                "Inverters continued."
+            ], 
+            "date": [
+                {
+                    "duration": 3.0, 
+                    "begin-time": "9:30:00", 
+                    "end-time": "12:30:00", 
+                    "day": "Monday"
+                }, 
+                {
+                    "duration": 3.0, 
+                    "begin-time": "13:30:00", 
+                    "end-time": "16:30:00", 
+                    "day": "Thursday"
+                }
+            ], 
+            "crn": "13359", 
+            "date-range": {
+                "end-date": "21 Jen 2019", 
+                "begin-date": "15 Sep 2018"
+            }
         }
     }
 }

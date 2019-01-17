@@ -19,6 +19,13 @@ class LocalDatabaseServer(object):
         else:
             return False
 
+    def GetDatabase(self):
+        return dict(self.database)
+
+    def UpdateDatabase(self, database, save=True):
+        self.database = database
+        if save:
+            self.SaveDatabase()
 
     def LoadDatabase(self):
         database = None
@@ -53,6 +60,9 @@ class LocalDatabaseServer(object):
         else:
             return None
 
+    def GetCourseCodes(self):
+        return [x for x in self.database["courses"].keys()]
+
 
     def AddCourse(self, course):
         if not self.code_exists(course["code"]):
@@ -63,24 +73,43 @@ class LocalDatabaseServer(object):
             print "course already exists", course["name"], course["code"]
             return False
 
-    def RemoveCourseByCode(self, code):
-        self.database["courses"].pop(code, None)
-        self.SaveDatabase()
+
+    def RemoveCourseById(self, id):
+        if id in [self.database["courses"][x]["id"] for x in self.database["courses"].keys()]:
+            print [self.database["courses"].pop(x) for x in self.database["courses"].keys() if self.database["courses"][x]["id"] == id][0]
+            self.SaveDatabase()
+            return True
+        else:
+            return False
 
     def _listCourses(self):
         for x in self.database["courses"].values():
-            print x["name"], x["code"]
+            print x["name"], x["code"], x["grade-letter"]
             # print x["name"]
 
 
 
 
-a = LocalDatabaseServer()
-a.LoadDatabase()
-# b = a.GetCourseByCode("ELK 313")
-# a.RemoveCourseByCode("ELK 313")
-# a.AddCourse(b)
-a._listCourses()
+
+class DatabaseManager(object):
+    """docstring for DatabaseManager."""
+    def __init__(self, local_database):
+        self.local_database = local_database
+
+    def AddCourse(self, code, crn, name, credits, grade_letter="I/P"):
+        id = code.replace(" ", "") + "_" + crn
+        course = {
+            "id": id,
+            "code": code,
+            "crn": crn,
+            "name": name,
+            "credits": 4,
+            "grade-letter": grade_letter
+        }
+        self.local_database.AddCourse(course)
+
+
+
 
 
 
