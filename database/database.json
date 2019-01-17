@@ -37,6 +37,15 @@
                 "begin-date": "15 Sep 2018"
             }
         }, 
+        "MAT 210": {
+            "code": "MAT 210", 
+            "name": "Differential Equations", 
+            "grade": 1.0, 
+            "grade-letter": "DD", 
+            "credits": 4, 
+            "crn": "13756", 
+            "id": "MAT210_13756"
+        }, 
         "ELK 313": {
             "code": "ELK 313", 
             "name": "Power Electronic Circuits", 

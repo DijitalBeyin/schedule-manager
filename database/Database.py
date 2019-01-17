@@ -3,7 +3,18 @@ import yaml, json, os
 import logging
 logger = logging
 
-
+grade_letter_lookup = {
+    "AA": 4.0,
+    "BA": 3.5,
+    "BB": 3.0,
+    "CB": 2.5,
+    "CC": 2.0,
+    "DC": 1.5,
+    "DD": 1.0,
+    "FF": 0.0,
+    "VF": 0.0,
+    "IP": 0
+}
 class LocalDatabaseServer(object):
     """Local Database server, maintains low level database operations, based on the
     user requests."""
@@ -64,8 +75,8 @@ class LocalDatabaseServer(object):
         return [x for x in self.database["courses"].keys()]
 
 
-    def AddCourse(self, course):
-        if not self.code_exists(course["code"]):
+    def AddCourse(self, course, overwrite=False):
+        if not self.code_exists(course["code"]) or overwrite:
             self.database["courses"][course["code"]] = course
             self.SaveDatabase()
             return True
@@ -96,7 +107,7 @@ class DatabaseManager(object):
     def __init__(self, local_database):
         self.local_database = local_database
 
-    def AddCourse(self, code, crn, name, credits, grade_letter="I/P"):
+    def AddCourse(self, code, crn, name, credits, grade_letter="IP", overwrite=False):
         id = code.replace(" ", "") + "_" + crn
         course = {
             "id": id,
@@ -104,14 +115,18 @@ class DatabaseManager(object):
             "crn": crn,
             "name": name,
             "credits": 4,
-            "grade-letter": grade_letter
+            "grade-letter": grade_letter,
+            "grade": grade_letter_lookup[grade_letter]
         }
-        self.local_database.AddCourse(course)
+        self.local_database.AddCourse(course, overwrite=True)
 
 
 
+    def GetCourseList(self):
+        return [self.local_database.GetCourseByCode(x) for x in self.local_database.GetCourseCodes()]
 
-
+    def RemoveByID(self, id):
+        return self.local_database.RemoveCourseById(id)
 
 
 
