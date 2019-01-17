@@ -8,12 +8,12 @@ from database.Database import LocalDatabaseServer, DatabaseManager
 server = LocalDatabaseServer()
 server.LoadDatabase()
 
-
-
 manager = DatabaseManager(server)
+
+
 manager.AddCourse(name="Differential Equations", crn="13756", credits=5, code="MAT 210", grade_letter="DD", overwrite=True)
 # manager.RemoveByID("MAT210_13756")
-server._listCourses()
+# server._listCourses()
 
 
 

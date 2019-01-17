@@ -13,8 +13,9 @@ grade_letter_lookup = {
     "DD": 1.0,
     "FF": 0.0,
     "VF": 0.0,
-    "IP": 0
+    "IP": 0.0
 }
+
 class LocalDatabaseServer(object):
     """Local Database server, maintains low level database operations, based on the
     user requests."""
